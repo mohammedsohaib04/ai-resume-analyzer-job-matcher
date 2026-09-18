@@ -2,6 +2,10 @@
 
 A portfolio-ready web application that analyzes a resume against a job description, detects relevant skills, calculates a match score, highlights missing skills, and generates practical improvement suggestions.
 
+## 🚀 Live Demo
+
+https://ai-resume-analyzer-job-matcher-re2k.onrender.com
+
 ## Features
 - PDF resume upload (up to 5 MB)
 - Automated skill extraction and matching
