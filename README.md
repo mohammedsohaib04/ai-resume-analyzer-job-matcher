@@ -1,28 +1,29 @@
-# 🤖 AI Resume Analyzer & Job Matcher
+# 🤖 ResumeAI — AI Career Copilot
 
-A portfolio-ready web application that analyzes a resume against a job description, detects relevant skills, calculates a match score, highlights missing skills, and generates practical improvement suggestions.
+A SaaS-ready resume analyzer that compares a resume with a target job, saves analysis history per user, and enforces a free usage limit.
 
-## 🚀 Live Demo
-
+## Live Demo
 https://ai-resume-analyzer-job-matcher-re2k.onrender.com
 
-## Features
-- PDF resume upload (up to 5 MB)
-- Automated skill extraction and matching
-- Resume-to-job match percentage
-- Matched and missing skill breakdown
-- Actionable resume improvement suggestions
-- Responsive modern UI
-- No external API key required
-- Deployment-ready with Gunicorn
+## Current SaaS features
+- Account signup/login with hashed passwords
+- Per-user dashboard
+- Saved analysis history
+- PDF resume upload up to 5 MB
+- Resume/job skill matching
+- Match score and missing skills
+- Free plan: 3 analyses
+- Pro plan foundation
+- SQLite locally or PostgreSQL through DATABASE_URL
+- Gunicorn production server
 
-## Tech Stack
-Python, Flask, pypdf, HTML5, CSS3, JavaScript
+## Production environment variables
+Set:
+- SECRET_KEY = a long random secret
+- DATABASE_URL = PostgreSQL connection string
 
 ## Run locally
 ```bash
-git clone https://github.com/mohammedsohaib04/ai-resume-analyzer-job-matcher.git
-cd ai-resume-analyzer-job-matcher
 python -m venv venv
 venv\\Scripts\\activate
 pip install -r requirements.txt
@@ -31,8 +32,12 @@ python app.py
 
 Open http://localhost:5000
 
-## Future Enhancements
-LLM semantic matching, ATS keyword analysis, resume section scoring, accounts, saved analyses, job-board integrations and exportable reports.
-
-## Author
-**Mohammed Sohaib Ali**
+## Roadmap
+1. PostgreSQL production database
+2. Stripe/Razorpay subscriptions
+3. LLM semantic resume analysis
+4. AI resume rewriting
+5. Cover-letter generator
+6. Job application tracker
+7. Interview preparation
+8. Usage analytics and admin dashboard
