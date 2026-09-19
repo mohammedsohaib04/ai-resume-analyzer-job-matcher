@@ -1,0 +1,1 @@
+document.addEventListener('DOMContentLoaded',()=>{const input=document.querySelector('input[type=file]');if(input){input.addEventListener('change',()=>{const label=document.querySelector('.upload small');if(label&&input.files[0])label.textContent=input.files[0].name})}});
